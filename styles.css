@@ -1,7 +1,7 @@
 * {
     --black-primary: rgb(10, 10, 10);
     --white-primary: rgb(243, 238, 238);
-    --orange-primary: rgb(235,121,21);
+    --orange-primary: rgb(223, 111, 13);
 }
 
 body{
@@ -10,6 +10,18 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Inter','Open Sans','Roboto', sans-serif;
+}
+h1{
+    font-size: 3.1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+section {
+    height: 800px;
+    border-bottom: 2px solid yellow;
 }
 
 header {
@@ -32,8 +44,8 @@ nav ul {
 }
 
 nav a {
-    color: var(--orange-primary);
-    text-decoration: none;
+    color: rgb(250, 146, 55);
+    font-weight: bold;
     padding: 10px;
     transition: all 0.3s ease;
     border: 3px solid transparent;
@@ -41,6 +53,7 @@ nav a {
 
 nav ul a:hover {
     border-bottom: 3px solid var(--orange-primary);
+    color: var(--orange-primary);
 }
 
 /* fin header */
@@ -56,11 +69,8 @@ main {
 }
 
 main h1 {
-    font-size: 3rem;
     margin: 20px;
 }
-
-
 
 .contenedorTextoPrincipal{
     width: 60%;
@@ -71,6 +81,32 @@ main h1 {
     box-shadow: 0 0 20px 10px rgb(7, 7, 7);
 }
 
-section {
-    height: 600px;
+/* MÁS VENDIDOS */
+
+#masVendidos{
+    margin: auto;
+    padding: 20px;
+}
+
+#masVendidos h1 {
+    text-align: center;
+}
+
+#masVendidos div {
+    display: flex;
+    /* gap: 10px; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#masVendidos article {
+    width: 23%;
+}
+
+#masVendidos img {
+    width:100%;
+}
+
+#masVendidos p{
+    font-size: 14px;
 }
