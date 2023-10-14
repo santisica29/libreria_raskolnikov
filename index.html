@@ -9,8 +9,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/676016ccbb.js" crossorigin="anonymous"></script>
     <title>Libreria Raskolnikov</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
@@ -36,9 +38,9 @@
     <section id="masVendidos">
         <h1>Más vendidos</h1>
         <div>
-            <article><img src="./imagenes/crimen_y_castigo.jpg" alt="libro crimen y castigo"><h2>Producto</h2><hr><p></p><a href="#">Comprar</a></article>
+            <article><img src="./imagenes/crimen_y_castigo.jpg" alt="libro crimen y castigo"><h2>Producto</h2><hr><p>Nadie ha retratado la psicología humana como lo hizo Dostoyevski. Publicado en 1866, su obra marca una de las cimas de la narrativa universal.</p><a href="#">Comprar</a></article>
         <article><img src="./imagenes/guardian_entre_el_centeno.jpg" alt="libro el guardian entre el centeno"><h2>Producto</h2><hr><p>
-            Publicada originalmente en 1945, la obra maestra de Salinger se convirtió en una obra de culto de toda una generación de lectores. La impresionante fuerza con que el adolescente protagonista se mira a sí mismo es de una brillantex sostenida como sólo muy pocos autores pueden lograr. Todo un clásico del siglo XX.
+            Publicada originalmente en 1945, la obra maestra de Salinger se convirtió en una obra de culto de toda una generación de lectores. Todo un clásico del siglo XX.
             </p><a href="#">Comprar</a></article>
         <article><img src="./imagenes/juana_de_arco.jpg" alt="libro juana de arco mark twain"><h2>Producto</h2><hr><p>Mark Twain siempre consideró a Juana como la mujer más admirable producida por la Humanidad, y a Recuerdos de Juana de Arco como la mejor de sus novelas.</p><a href="#">Comprar</a></article>
         </div>
@@ -46,19 +48,41 @@
     </section>
     <section id="tematica">
         <h1>Temática</h1>
+        <div class="grid-container">
+
+        </div>
     </section>
     <section id="ofertaEspecial">
         <h1>Oferta especial</h1>
     </section>
     <section id="contacto">
         <h1>Contacto</h1>
+        <form action="">
+            <label for="nombreCompleto">Nombre y apellido*</label>
+            <input type="text" name="" id="nombreCompleto" placeholder="Santiago Sica" required>
+            <label for="mail">Mail*</label>
+            <input type="email" name="" id="mail" placeholder="raskolnikov@gmail.com" required>
+            <label for="pais">Pais</label>
+            <select name="" id="pais">
+                <option value="URU" selected>Uruguay</option>
+                <option value="BRA">Brasil</option>
+                <option value="ARG">Argentina</option>
+                <option value="USA">USA</option>
+                <option value="FRA">Francia</option>
+            </select>
+            <input type="checkbox" name="" id="novedades">
+            <label for="novedades">Quiero recibir novedades</label>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Hola..."></textarea>
+            <button>Enviar</button>
+        </form>
     </section>
     <footer>
         <span>Santiago Sica M2C</span>
         <div class="redes-sociales">
-            <div class="ig"></div>
-            <div class="fb"></div>
-            <div class="wp"></div>
+            <div class="ig"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="fb"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+            <div class="wp"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></div>
         </div>
     </footer>
 </body>
