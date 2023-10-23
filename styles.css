@@ -21,7 +21,6 @@ a{
 }
 
 section {
-    height: 800px;
     border-bottom: 2px solid yellow;
 }
 
@@ -174,14 +173,113 @@ main h1 {
 
 /* OFERTA ESPECIAL */
 
-#ofertaEspecial {
-    padding: 25px;
-    height: 1200px;
+#ofertas {
+    padding: 60px 120px;
+    height: 1000px;
+    background-color: var(--black-primary);
 }
 
-#ofertaEspecial h1 {
+#ofertas h1, #ofertas h2 {
     text-align: center;
 }
+
+#ofertas h1, #ofertas h2, #ofertas h3{
+    margin-top: 0;
+}
+
+#ofertas h2 {
+    font-size: 2rem;
+}
+
+#ofertas a {
+    padding: 12px 20px;
+    background-color: var(--black-primary);
+    color: var(--orange-primary);
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-out;
+}
+
+#ofertas a:hover{
+    background-color: rgb(15, 15, 15);
+}
+
+#ofertaEspecial, #otrasOfertas article{
+    background-color: var(--orange-primary);
+    color: var(--black-primary);
+}
+#ofertaEspecial{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+#ofertaEspecial img {
+    width: 50%;
+}
+
+#ofertaEspecial div {
+    width: 50%;
+    padding: 40px 55px;
+}
+
+#ofertaEspecial h2 {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+#ofertaEspecial h4{
+    margin-bottom: 0;
+}
+
+#ofertaEspecial span{
+    display: inline-block;
+    padding: 5px 9px;
+    background-color: var(--black-primary);
+    color: var(--orange-primary);
+    /* font-weight: bold; */
+    border-radius: 20px;
+    font-size: 11.5px;
+    vertical-align:super;
+}
+
+#ofertaEspecial table {
+    width: 98%;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+#ofertaEspecial table, #ofertaEspecial tr, #ofertaEspecial td, #ofertaEspecial th{
+    border: 2px solid black;
+}
+#ofertaEspecial th{
+    background-color: rgb(196, 95, 7);
+}
+
+#ofertaEspecial td:nth-child(odd) {
+    text-decoration: line-through;
+}
+#ofertaEspecial a {
+    display: inline-block;
+    margin-top: 20px;
+}
+#ofertas article{
+    border: 2px solid yellow;
+}
+
+#otrasOfertas div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#otrasOfertas h2{
+    margin-top: 40px;
+}
+
 
 /* CONTACTO */
 
@@ -210,6 +308,7 @@ form {
     display: flex;
     justify-content: center;
     gap: 50px;
+    
 }
 
 form input[type=text], input[type=email] {
@@ -220,6 +319,7 @@ form select {
     width: 45%;
     display: inline-block;
     margin-right: 30px;
+    font-weight: bold;
 }
 
 form input[type=text], input[type=email], select {
@@ -230,6 +330,7 @@ form div {
 }
 input, textarea, label {
     display: block;
+    font-weight: bold;
 }
 
 input, textarea{
@@ -245,7 +346,6 @@ input, textarea, select{
 }
 label {
     margin-bottom: 5px;
-    font-weight: bold;
 }
 
 .label-novedades {
@@ -282,6 +382,7 @@ input[type=checkbox]{
     height: 17px;
     cursor: pointer;
 }
+
 /* FOOTER */
 footer {
     padding: 2rem;
