@@ -20,10 +20,6 @@ a{
     text-decoration: none;
 }
 
-section {
-    border-bottom: 2px solid yellow;
-}
-
 header {
     display: flex;
     flex-direction: column;
@@ -136,7 +132,7 @@ main h1 {
 /* TEMATICAS */
 
 #tematica {
-    height: 1500px;
+    height: 1420px;
 }
 
 #tematica h1 {
@@ -175,8 +171,7 @@ main h1 {
 
 #ofertas {
     padding: 60px 120px;
-    height: 1000px;
-    background-color: var(--black-primary);
+    height: 1150px;
 }
 
 #ofertas h1, #ofertas h2 {
@@ -201,19 +196,23 @@ main h1 {
 }
 
 #ofertas a:hover{
-    background-color: rgb(15, 15, 15);
+    border-radius: 25px;
 }
 
-#ofertaEspecial, #otrasOfertas article{
+#ofertaEspecial{
+    padding-top: 50px;
+}
+
+#ofertaEspecial article, #otrasOfertas article{
     background-color: var(--orange-primary);
     color: var(--black-primary);
 }
-#ofertaEspecial{
+#ofertaEspecial article{
     display: flex;
     justify-content: center;
     border-radius: 20px;
     overflow: hidden;
-    margin-bottom: 50px;
+    margin-bottom: 65px;
 }
 
 #ofertaEspecial img {
@@ -235,15 +234,9 @@ main h1 {
     margin-bottom: 0;
 }
 
-#ofertaEspecial span{
-    display: inline-block;
-    padding: 5px 9px;
-    background-color: var(--black-primary);
-    color: var(--orange-primary);
-    /* font-weight: bold; */
-    border-radius: 20px;
-    font-size: 11.5px;
-    vertical-align:super;
+#ofertaEspecial .descuento{
+    vertical-align: super;
+    margin-bottom: 0;
 }
 
 #ofertaEspecial table {
@@ -267,17 +260,56 @@ main h1 {
     display: inline-block;
     margin-top: 20px;
 }
-#ofertas article{
-    border: 2px solid yellow;
-}
 
-#otrasOfertas div {
-    display: flex;
-    justify-content: space-around;
+#otrasOfertas, #ofertaEspecial{
+    border-top: 5px solid var(--orange-primary);
 }
 
 #otrasOfertas h2{
-    margin-top: 40px;
+    padding-top: 50px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+#otrasOfertas div {
+    display: flex;
+    justify-content: space-between;
+}
+#otrasOfertas div article{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    border-radius: 8px;
+    width: 28%;
+}
+
+#otrasOfertas div article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.descuento{
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: darkblue;
+    border-radius: 10px;
+    width: fit-content;
+    color: white;
+}
+
+#otrasOfertas h3 {
+    margin: 0;
+}
+
+#otrasOfertas img {
+    width: 120px;
+}
+
+#otrasOfertas a{
+    padding: 7px 11px;
 }
 
 
