@@ -1,5 +1,5 @@
 * {
-    --black-primary: rgb(10, 10, 10);
+    --black-primary: black;
     --white-primary: rgb(243, 238, 238);
     --orange-primary: rgb(223, 111, 13);
     box-sizing: border-box;
@@ -86,13 +86,15 @@ main h1 {
 
 #masVendidos{
     margin: auto;
-    padding: 0 20px;
-    height: 830px;
+    padding: 70px 20px;
+    height: 910px;
+    background: rgb(0,0,0);
 }
 
 #masVendidos h1 {
     text-align: center;
-    margin: 60px;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 #masVendidos div {
@@ -168,6 +170,17 @@ main h1 {
 
 #tematica article:hover {
     transform: scale(1.1);
+}
+
+/* OFERTA ESPECIAL */
+
+#ofertaEspecial {
+    padding: 25px;
+    height: 1200px;
+}
+
+#ofertaEspecial h1 {
+    text-align: center;
 }
 
 /* CONTACTO */
