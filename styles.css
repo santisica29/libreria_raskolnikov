@@ -60,7 +60,7 @@ nav ul a:hover {
 /* start main */
 
 main {
-    background-image: url(./imagenes/26102.jpg);
+    background-image: url(./imagenes/img-main/libreria-fondo-main.jpg);
     height: 600px;
     background-size:contain;
     display: flex;
@@ -129,7 +129,7 @@ main h1 {
     margin-bottom: 1.7rem;
 }
 
-#masVendidos a {
+#masVendidos a{
     padding: .5rem 1rem;
     border-radius: 4px;
     font-weight: bold;
@@ -175,7 +175,7 @@ main h1 {
 }
 
 #tematica article{
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-out;
     
 }
 
@@ -319,6 +319,14 @@ main h1 {
     padding: 20px 0;
     border-radius: 8px;
     width: 28%;
+    border: 4px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#otrasOfertas article:hover {
+    background-color: var(--black-primary);
+    color: var(--orange-primary);
+    border: 4px solid var(--orange-primary);
 }
 
 #otrasOfertas div article div {
@@ -326,17 +334,6 @@ main h1 {
     flex-direction: column;
     justify-content: center;
     gap: 12px;
-}
-
-.descuento{
-    margin-bottom: 20px;
-    display: inline-block;
-    font-size: 12px;
-    padding: 5px 10px;
-    background-color: darkblue;
-    border-radius: 10px;
-    width: fit-content;
-    color: white;
 }
 
 #otrasOfertas h3 {
@@ -351,6 +348,16 @@ main h1 {
     padding: 7px 11px;
 }
 
+.descuento{
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: darkblue;
+    border-radius: 10px;
+    width: fit-content;
+    color: white;
+}
 
 /* CONTACTO */
 
