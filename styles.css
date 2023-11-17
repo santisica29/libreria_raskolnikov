@@ -205,7 +205,7 @@ main h1 {
 
 #ofertas {
     padding: 80px;
-    height: 1285px;
+    height: 1320px;
 }
 
 #ofertas h1, #ofertas h2 {
@@ -248,7 +248,7 @@ main h1 {
     overflow: hidden;
     margin: auto;
     margin-bottom: 65px;
-    width: 1200px;
+    width: 100%;
 }
 
 #ofertaEspecial img {
