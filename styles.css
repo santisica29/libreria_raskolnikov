@@ -395,7 +395,7 @@ form input[type=text], input[type=email] {
 form select {
     width: 45%;
     display: inline-block;
-    margin-right: 55px;
+    margin-right: 40px;
     font-weight: bold;
 }
 
