@@ -63,7 +63,8 @@ nav ul a:hover {
 main {
     background-image: url(./imagenes/img-main/libreria-fondo-main2.jpg);
     height: 600px;
-    background-size:contain;
+    background-size:cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
