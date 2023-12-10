@@ -490,3 +490,9 @@ footer a {
 footer a:hover {
     color: var(--orange-primary);
 }
+
+@media (max-width: 986px){
+    main h1 {
+        font-size: 2.4rem;
+    }
+}
