@@ -95,7 +95,7 @@ main h1 {
 #masVendidos{
     margin: auto;
     padding: 70px 20px;
-    height: 910px;
+    height: auto;
     background: rgb(0,0,0);
 }
 
@@ -113,9 +113,10 @@ main h1 {
 
 #masVendidos div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-}
+} 
 
 #masVendidos article {
     width: 23%;
@@ -148,10 +149,6 @@ main h1 {
 
 /* TEMATICAS */
 
-#tematica {
-    height: 1400px;
-}
-
 #tematica h1 {
     text-align: center;
     background-color: var(--orange-primary);
@@ -164,7 +161,7 @@ main h1 {
     display: grid;
     grid-template-columns: repeat(6,160px);
     justify-content: center;
-    width: 1200px;
+    width: 90%;
     margin: auto;
     gap: 5px;
 }
@@ -202,11 +199,15 @@ main h1 {
     height: 480px;
 }
 
+.hr3 {
+    display: grid;
+}
+
 /* OFERTA ESPECIAL */
 
 #ofertas {
-    padding: 80px;
-    height: 1320px;
+    padding: 60px;
+    height: auto;
 }
 
 #ofertas h1, #ofertas h2 {
@@ -311,7 +312,9 @@ main h1 {
 }
 #otrasOfertas div {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.8rem;
 }
 #otrasOfertas div article{
     display: flex;
@@ -341,7 +344,7 @@ main h1 {
 }
 
 #otrasOfertas img {
-    width: 120px;
+    width: 40%;
 }
 
 #otrasOfertas a{
@@ -365,7 +368,7 @@ main h1 {
     display: flex;
     flex-direction: column;
     padding: 30px 100px;
-    height: 550px;
+    height: auto;
     background-color: var(--orange-primary);
     color: var(--black-primary);
 }
@@ -386,7 +389,6 @@ form {
     display: flex;
     justify-content: center;
     gap: 70px;
-    
 }
 
 form input[type=text], input[type=email] {
@@ -491,8 +493,104 @@ footer a:hover {
     color: var(--orange-primary);
 }
 
-@media (max-width: 986px){
+@media (max-width: 1048px){
+    #tematica .grid-container{
+        grid-template-columns: repeat(2,150px);
+    }
     main h1 {
         font-size: 2.4rem;
     }
 }
+@media (max-width:940px){
+    #ofertaEspecial article{
+        flex-direction: column;
+    }
+    #ofertaEspecial img {
+        width: 100%;
+        height: 530px;
+    }
+    
+    #ofertaEspecial div {
+        width: 100%;
+    }
+}
+@media (max-width: 820px){
+    #otrasOfertas div article{
+        width:42%;
+    }
+    form {
+        flex-direction: column;
+        gap: 20px;
+    }
+    form select {
+        width: 100%;
+        display: inline-block;
+        font-weight: bold;
+    }
+    form div {
+        width: 100%;
+    }
+}
+@media (max-width:768px){
+    #masVendidos article {
+        width: 65%;
+        margin-bottom: 3rem;
+    }
+    #masVendidos img {
+        height: 600px;
+    }
+    #tematica .grid-container{
+        grid-template-columns: repeat(4,fr);
+    }
+    #grid1 {
+        grid-row: 1/1;
+        grid-column: 1/1;
+    }
+    
+    #grid2 {
+        grid-row: 2/2;
+        grid-column: 4/4;
+    }
+    
+    #grid3{
+        grid-row: 4/4;
+        grid-column: 3/3;
+    }
+    #grid1 img, #grid2 img, #grid3 img {
+        height: 235px;
+    }
+
+    .hr3{
+        display: none;
+    }
+}
+
+@media (max-width:620px){
+    #masVendidos img {
+        height: 470px;
+    }
+    #tematica .grid-container{
+        grid-template-columns: repeat(4, 110px);
+    }
+    #tematica img{
+        height: 180px;
+    }
+
+    #ofertaEspecial article{
+        flex-direction: column;
+    }
+    #ofertaEspecial img {
+        width: 100%;
+        height: 420px;
+    }
+    
+    #ofertaEspecial div {
+        width: 100%;
+        padding: 55px;
+    }
+
+    #otrasOfertas div article{
+        width:70%;
+    }
+}
+
