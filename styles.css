@@ -17,12 +17,47 @@ h1{
     font-size: 3.1rem;
 }
 
+h1,h2,h3,h4{
+    font-weight: bold;
+}
+h1,h2{
+    padding: 1rem 0;
+}
+
 p{
     line-height: 1.5;
 }
 
 a{
     text-decoration: none;
+}
+
+#responsive-header {
+    display: none;
+}
+
+#responsive-header img{
+    width: 180px;
+}
+
+#responsive-header .nav-link {
+    font-weight: bold;
+    color: var(--orange-primary);
+    text-decoration: none;
+    text-align: center;
+    padding: .8rem 0;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease-in;
+}
+
+#responsive-header .nav-link:hover {
+    border-bottom-color: var(--orange-primary);
+    color: rgb(189, 92, 7);
+}
+
+#responsive-header .navbar-toggler {
+    color: var(--orange-primary);
+    background-color:black; 
 }
 
 header {
@@ -71,7 +106,7 @@ main {
 }
 
 main h1 {
-    margin: 20px;
+    padding: 10px;
 }
 
 .contenedorTextoPrincipal{
@@ -206,7 +241,7 @@ main h1 {
 /* OFERTA ESPECIAL */
 
 #ofertas {
-    padding: 60px;
+    padding: 60px 40px;
     height: auto;
 }
 
@@ -367,7 +402,7 @@ main h1 {
 #contacto {
     display: flex;
     flex-direction: column;
-    padding: 30px 100px;
+    padding: 30px 90px;
     height: auto;
     background-color: var(--orange-primary);
     color: var(--black-primary);
@@ -533,7 +568,7 @@ footer a:hover {
 }
 @media (max-width:768px){
     #masVendidos article {
-        width: 65%;
+        width: 75%;
         margin-bottom: 3rem;
     }
     #masVendidos img {
@@ -586,11 +621,57 @@ footer a:hover {
     
     #ofertaEspecial div {
         width: 100%;
-        padding: 55px;
+        padding: 35px;
     }
 
     #otrasOfertas div article{
-        width:70%;
+        width:75%;
+    }
+
+    #contacto {
+        padding: 30px 50px;
     }
 }
+@media (max-width:450px){
+    h1{
+        font-size: 2.3rem;
+    }
+    
+    #header {
+        display: none;
+    }
+    #responsive-header {
+        display: block;
+    }
+    nav ul a {
+        font-size: .6rem;
+    }
 
+    .contenedorTextoPrincipal h1{
+        font-size: 1.7rem;
+    }
+    #masVendidos article {
+        width: 70%;
+        margin-bottom: 3rem;
+    }
+    #masVendidos img {
+        height: 340px;
+    }
+    #tematica .grid-container{
+        grid-template-columns: repeat(4, 90px);
+    }
+
+    #tematica img{
+        height: 140px;
+    }
+
+    #ofertaEspecial div {
+        padding: 25px;
+    }
+
+    #ofertaEspecial img {
+        height: 370px;
+    }
+
+
+}
