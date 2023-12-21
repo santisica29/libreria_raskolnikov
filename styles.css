@@ -612,7 +612,7 @@ footer a:hover {
     #tematica img{
         height: 180px;
     }
-
+    
     #ofertaEspecial article{
         flex-direction: column;
     }
@@ -667,6 +667,9 @@ footer a:hover {
         height: 140px;
     }
 
+    #ofertas {
+        padding:40px 30px;
+    }
     #ofertaEspecial div {
         padding: 25px;
     }
