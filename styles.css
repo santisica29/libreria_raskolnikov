@@ -386,6 +386,7 @@ main h1 {
 
 #otrasOfertas a{
     padding: 7px 11px;
+    width: fit-content;
 }
 
 .descuento{
